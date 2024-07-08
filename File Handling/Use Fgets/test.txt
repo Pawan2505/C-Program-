@@ -1,0 +1,1 @@
+This is fgets method to get the string from file.
