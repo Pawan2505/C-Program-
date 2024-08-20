@@ -1,23 +1,49 @@
+// #include <stdio.h>
+// #include <string.h>
+
+// union Data
+// {
+//     int i;
+//     float f;
+//     char str[20];
+// };
+
+// int main()
+// {
+//     union Data data;
+//     strcpy(data.str, "C Programming");
+
+//     data.f = 220.5;
+//     data.i = 10;
+
+//     printf("data.str: %s \n", data.str);
+//     printf("data.i: %d \n", data.i);
+//     printf("data.f: %f \n", data.f);
+
+//     return 0;
+// }
+
 #include <stdio.h>
 #include <string.h>
 
-union Data
+enum Day
 {
-    int i;
-    float f;
-    char str[20];
+    sunday,
+    monday,
+    Tuesday = 67,
+    wednesday,
+    Thusday,
+    Friday,
+    saturday
 };
 
 int main()
 {
-    union Data data;
+    enum Day today;
 
-    // data.i = 10;
-    data.f = 220.5;
-    // strcpy(data.str, "C Programming");
+    today = wednesday;
 
-    // printf("data.i: %d \n", data.i);
-    printf("data.f: %f \n", data.f);
-    // printf("data.str: %s \n", data.str);
+    printf("Today : %d \n", today);
+
     return 0;
 }

@@ -8,10 +8,10 @@ int main()
     // printf("%u\n", &arr[0]);
     // printf("%u", &arr[1]);
 
-    // int(*p)[5] = &arr;
+    int *p = arr;
 
-    // printf("%d\n", (p)[2]);
-    // printf("%p", p);
+    printf("%d\n", p[2]);
+    printf("%p", p);
 }
 
 // #include <stdio.h>

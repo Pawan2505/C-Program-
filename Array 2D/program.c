@@ -248,10 +248,11 @@ int main()
     int arr[3][3] = {
         {1, 2, 3},
         {4, 5, 6},
-        {7, 8}};
+        {7, 8}
+        };
 
     // Row and column where the new element is to be inserted
-    int row = 2, col = 1;
+    int row = 1, col = 1;
 
     // Shift elements to the right and down to make space for new element
     for (int i = 2; i >= row; i--)
